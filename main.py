@@ -29,6 +29,10 @@ try:
         print("Odd:", analyzer.odd_count())
         print("Highest:", analyzer.highest_number())
         print("Increasing pairs:", analyzer.increasing_pairs())
+
+        with open("data.txt", "w") as f:
+            f.write(str(analyzer.numbers))
+
         if len(analyzer.numbers) == sequence_length and time.localtime().tm_sec == 0:
             print("Stopping program.")
             break
