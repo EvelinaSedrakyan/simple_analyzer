@@ -29,6 +29,7 @@ try:
         print("Odd:", analyzer.odd_count())
         print("Highest:", analyzer.highest_number())
         print("Increasing pairs:", analyzer.increasing_pairs())
+        print("Interval and sequence length loaded from config.")
 
         with open("data.txt", "w") as f:
             f.write(str(analyzer.numbers))
